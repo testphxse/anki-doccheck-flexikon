@@ -1,0 +1,15 @@
+{
+  "markierung_aktiv": true,
+  "markierung_stil": "dotted",
+  "doppelklick_nachschlagen": true,
+  "hintergrund_pruefung": true,
+  "max_wortkette": 3,
+  "max_begriffe_pro_karte": 60,
+  "max_pruefungen_pro_karte": 25,
+  "sammelabfrage": true,
+  "sofort_nachziehen": true,
+  "antwort_vorbereiten": true,
+  "grundform_versuchen": true,
+  "anfrage_abstand_sekunden": 0.4,
+  "artikel_cache_stunden": 72
+}

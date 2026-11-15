@@ -1,0 +1,8 @@
+{
+  "package": "flexikon_lookup",
+  "name": "DocCheck Flexikon – Nachschlagen auf Karten",
+  "homepage": "https://flexikon.doccheck.com/",
+  "min_point_version": 50,
+  "conflicts": [],
+  "mod": 6
+}
