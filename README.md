@@ -8,6 +8,12 @@ live über die offizielle Flexikon-API geladen.
 > Inoffizielles Community-Projekt. Steht in keiner Verbindung zu DocCheck oder AMBOSS.
 > Entwickelt mit Hilfe von KI (Claude).
 
+![Das Nachschlage-Fenster mit dem Artikel „Myokard“](docs/screenshot.png)
+
+<sub>Artikeltext im Screenshot: [Myokard](https://flexikon.doccheck.com/de/Myokard), DocCheck Flexikon
+([Liste der Autoren](https://flexikon.doccheck.com/de/Spezial:Artikel_Autoren/Myokard),
+lizenziert unter [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de)).</sub>
+
 ## Installation
 
 1. In Anki: **Werkzeuge → Add-ons → Add-on-Datei installieren …**
