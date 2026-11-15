@@ -1,0 +1,51 @@
+/* Markierung der im Flexikon vorhandenen Fachbegriffe.
+ *
+ * Anki setzt die Klassen für das dunkle Design auf <body> selbst
+ * ("nightMode night_mode") und zusätzlich "night-mode" auf <html>. Die
+ * Farben hängen deshalb an einer Variablen, die an beiden Stellen
+ * umgeschaltet wird.
+ */
+
+body {
+  --flexikon-line: rgba(11, 92, 173, .8);
+  --flexikon-text: #0b5cad;
+  --flexikon-soft: rgba(11, 92, 173, .1);
+  --flexikon-hover: rgba(11, 92, 173, .17);
+}
+
+body.night_mode,
+body.nightMode,
+.night-mode body {
+  --flexikon-line: rgba(147, 197, 253, .9);
+  --flexikon-text: #93c5fd;
+  --flexikon-soft: rgba(147, 197, 253, .16);
+  --flexikon-hover: rgba(147, 197, 253, .26);
+}
+
+.flexikon-term {
+  cursor: pointer;
+  transition: background-color .12s ease;
+}
+
+body[data-flexikon-style="dotted"] .flexikon-term {
+  border-bottom: 1px dotted var(--flexikon-line);
+}
+
+body[data-flexikon-style="underline"] .flexikon-term {
+  border-bottom: 1px solid var(--flexikon-line);
+}
+
+body[data-flexikon-style="color"] .flexikon-term {
+  color: var(--flexikon-text);
+}
+
+body[data-flexikon-style="subtle"] .flexikon-term {
+  background: var(--flexikon-soft);
+  border-radius: 3px;
+  padding: 0 1px;
+}
+
+.flexikon-term:hover {
+  background: var(--flexikon-hover);
+  border-radius: 3px;
+}
