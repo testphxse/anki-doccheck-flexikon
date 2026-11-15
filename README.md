@@ -1,7 +1,12 @@
-# DocCheck Flexikon für Anki
+# DocCheck Flexikon für Anki (inoffiziell)
 
-Markiert medizinische Fachbegriffe auf deinen Karten und schlägt sie per Klick
-im DocCheck Flexikon nach, ohne die Lernsitzung zu verlassen.
+Unterstreicht medizinische Fachbegriffe auf deinen Anki-Karten und macht sie
+anklickbar. Ein Klick öffnet den passenden Artikel aus dem DocCheck Flexikon in
+einem kleinen Fenster, ohne die Lernsitzung zu verlassen. Die Artikel werden
+live über die offizielle Flexikon-API geladen.
+
+> Inoffizielles Community-Projekt. Steht in keiner Verbindung zu DocCheck oder AMBOSS.
+> Entwickelt mit Hilfe von KI (Claude).
 
 ## Installation
 
@@ -211,10 +216,18 @@ du sie im Kartentemplate in `<span class="flexikon-skip"> … </span>` setzt.
 
 ## Rechtliches
 
-Die Inhalte stammen vom DocCheck Flexikon, die Rechte liegen bei DocCheck.
-Das Addon lädt ausschließlich auf Abruf für den persönlichen Lerngebrauch und
-legt keine Artikelsammlung an. Die Lizenz der Inhalte ist in der API-Doku nicht
-benannt – vor einer Weitergabe oder Veröffentlichung bitte die Bedingungen auf
-der Flexikon-Website prüfen.
-
-Dieses Addon steht in keiner Verbindung zu DocCheck oder AMBOSS.
+- Das Addon enthält **keine** Flexikon-Inhalte. Artikel werden erst beim
+  Nachschlagen live über die öffentlich dokumentierte API
+  (`flexikon.doccheck.com/llms.txt`) geladen, mit eigenem User-Agent und
+  begrenzter Anfragerate.
+- Die Texte des Flexikons stehen laut den
+  [Flexikon-Nutzungsbedingungen](https://flexikon.doccheck.com/de/Flexikon:Nutzungsbedingungen)
+  unter **CC BY-NC-SA 4.0**. Bilder sind davon ausgenommen und gehören DocCheck
+  bzw. den Bildautoren. Jedes Popup nennt DocCheck Flexikon als Quelle und
+  verlinkt den Originalartikel („Im Browser öffnen“).
+- Gedacht ausschließlich für den persönlichen, nicht-kommerziellen Lerngebrauch.
+  Es wird kein Bulk-Download gemacht; der Artikel-Cache ist zeitlich begrenzt
+  (`artikel_cache_stunden`).
+- „DocCheck“ ist ein Name bzw. eine Marke der DocCheck-Gruppe. Dieses Addon steht
+  in keiner Verbindung zu DocCheck oder AMBOSS. Bei Einwänden von DocCheck
+  bitte ein Issue öffnen – das Repository wird dann angepasst oder entfernt.
